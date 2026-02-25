@@ -41,5 +41,5 @@ map('n', '<leader>fh', builtin.help_tags)  -- Telescope help tags
 -- Git keymaps
 map('n', '<leader>gs', builtin.git_status)   -- Telescope git status for files
 map('n', '<leader>gb', builtin.git_branches) -- Telescope git branches
-map('n', '<leader>gc', builtin.git_commits)  -- Telescope git branches
-map('n', '<leader>gp', builtin.git_stash)    -- Telescope git branches
+map('n', '<leader>gc', builtin.git_commits)  -- Telescope git commits
+map('n', '<leader>gp', builtin.git_stash)    -- Telescope git stashes
