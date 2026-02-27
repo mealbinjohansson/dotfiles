@@ -97,3 +97,22 @@ vim.lsp.config('vtsls', {
 	},
 	filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
 })
+
+-- ruff
+vim.lsp.enable('ruff')
+
+-- basedpyright
+vim.lsp.enable('basedpyright')
+
+-- nixd
+vim.lsp.enable('nixd')
+vim.lsp.config('nixd', {
+	cmd = { "nixd" },
+	settings = {
+		nixd = {
+			formatting = {
+				command = { "alejandra" },
+			},
+		},
+	},
+})
