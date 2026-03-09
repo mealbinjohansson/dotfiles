@@ -6,9 +6,6 @@
 vim.pack.add({ { src = "https://github.com/Mofiqul/dracula.nvim" } })
 
 -- Setup
-vim.cmd("colorscheme dracula")
-vim.cmd("hi Normal guibg=#000000")
-
 local dracula = require("dracula")
 dracula.setup({
   colors = {
@@ -17,3 +14,5 @@ dracula.setup({
   },
   lualine_bg_color = "#000000",
 })
+
+vim.cmd("colorscheme dracula")
