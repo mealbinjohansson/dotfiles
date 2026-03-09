@@ -9,7 +9,7 @@ vim.pack.add({ { src = "https://github.com/nvim-lualine/lualine.nvim" } })
 require('lualine').setup {
 	options = {
 		icons_enabled = true,
-		theme = 'gruvbox_dark',
+		theme = 'dracula-nvim',
 		section_separators = '',
 		component_separators = '',
 	},
@@ -25,8 +25,5 @@ require('lualine').setup {
 		} },
 		lualine_y = { 'branch' },
 		lualine_z = { 'location' }
-	},
-	inactive_sections = {
-		lualine_a = { 'filename' },
 	},
 }
