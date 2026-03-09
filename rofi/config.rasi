@@ -7,4 +7,4 @@ configuration {
     font: "Input Mono 12";
 }
 
-@import "gruvbox.rasi"
+@import "dracula.rasi"

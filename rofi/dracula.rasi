@@ -1,19 +1,24 @@
 /**
- * Minimal Gruvbox Theme (Darker)
+ * Dracula Rofi Theme
  */
 
 * {
-    /* Colors */
-    bg0:     #000000; /* Pure Black background */
-    bg1:     #151515; /* Very dark grey for selected elements / input */
-    bg2:     #282828; /* Border colors */
-    fg0:     #ebdbb2; /* Text */
-    fg1:     #d5c4a1;
-    gray:    #928374;
-    accent:  #ebdbb2; /* Soft Gruvbox White/Cream */
+    /* Dracula Color Palette */
+    drac-bgd: #000000;
+    drac-cur: #44475a;
+    drac-fgd: #f8f8f2;
+    drac-cmt: #6272a4;
+    drac-cya: #8be9fd;
+    drac-grn: #50fa7b;
+    drac-ora: #ffb86c;
+    drac-pin: #ff79c6;
+    drac-pur: #bd93f9;
+    drac-red: #ff5555;
+    drac-yel: #f1fa8c;
 
+    accent:           @drac-pur;
     background-color: transparent;
-    text-color:       @fg0;
+    text-color:       @drac-fgd;
     
     margin:  0;
     padding: 0;
@@ -23,9 +28,9 @@
 window {
     width:            600px;
     border:           2px;
-    border-color:     @bg2;
+    border-color:     @drac-pur;
     border-radius:    8px;
-    background-color: @bg0;
+    background-color: @drac-bgd;
     padding:          20px;
 }
 
@@ -34,7 +39,7 @@ mainbox {
 }
 
 inputbar {
-    background-color: @bg1;
+    background-color: @drac-cur;
     border-radius:    6px;
     padding:          10px 15px;
     spacing:          10px;
@@ -49,9 +54,9 @@ prompt {
 
 entry {
     placeholder:       "Search...";
-    placeholder-color: @gray;
+    placeholder-color: @drac-cmt;
     background-color:  inherit;
-    text-color:        @fg0;
+    text-color:        @drac-fgd;
 }
 
 listview {
@@ -62,33 +67,33 @@ listview {
     fixed-num-lines: true;
     fixed-height: true;
     border:       2px dash 0px 0px;
-    border-color: @bg2; /* Muted grey line instead of pure white */
+    border-color: @drac-cur;
     padding:      15px 0px 0px;
 }
 
-/* Explicit element rules to prevent default rofi white background */
+/* Explicit element rules */
 element {
     padding:          8px 15px;
     border-radius:    6px;
     spacing:          15px;
     background-color: transparent;
-    text-color:       @fg0;
+    text-color:       @drac-fgd;
     children:         [ element-icon, element-text ];
 }
 
 element normal.normal {
     background-color: transparent;
-    text-color:       @fg0;
+    text-color:       @drac-fgd;
 }
 
 element alternate.normal {
     background-color: transparent;
-    text-color:       @fg0;
+    text-color:       @drac-fgd;
 }
 
 element selected.normal {
-    background-color: @bg1;
-    text-color:       @accent;
+    background-color: @drac-cur;
+    text-color:       @drac-pur;
 }
 
 element-text {
@@ -109,11 +114,11 @@ mode-switcher {
 button {
     padding:          8px 15px;
     border-radius:    6px;
-    background-color: @bg1;
-    text-color:       @gray;
+    background-color: @drac-cur;
+    text-color:       @drac-cmt;
 }
 
 button selected {
-    background-color: @bg2;
-    text-color:       @accent;
+    background-color: @drac-pur;
+    text-color:       @drac-bgd;
 }
