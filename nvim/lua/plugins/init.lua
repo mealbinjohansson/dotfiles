@@ -1,5 +1,5 @@
 local plugins = {
-	"p_dracula",
+	"p_gruvbox",
 	"p_lualine",
 	"p_nvim-lspconfig",
 	"p_telescope",
