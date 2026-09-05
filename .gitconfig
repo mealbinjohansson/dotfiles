@@ -2,6 +2,8 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Albin Johansson
+	email = me@albinjohansson.com
+	signingkey = /Users/albin/.ssh/id_ed25519_signing
 [gpg]
 	format = ssh
 [commit]
