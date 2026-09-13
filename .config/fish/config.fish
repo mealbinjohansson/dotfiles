@@ -1,6 +1,7 @@
 set -gx NVM_DIR $HOME/.nvm
 set -gx EDITOR nvim
 set -gx VISUAL nvim
+set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
 
 if type -q bash; and test -s "$NVM_DIR/nvm.sh"
     set -l nvm_default_version (bash -c 'source "$NVM_DIR/nvm.sh"; nvm version default' 2>/dev/null)
