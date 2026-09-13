@@ -1,0 +1,20 @@
+{
+  "plugins": {
+    "cyberdream.nvim": {
+      "rev": "39e1fda12c0704e01029b286a4c7e77e33a0c5cd",
+      "src": "https://github.com/scottmckendry/cyberdream.nvim.git"
+    },
+    "fzf-lua": {
+      "rev": "05e44d38de0a79c11fba5f7bf8138791b1dbdd1e",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "nvim-lspconfig": {
+      "rev": "ac9d2f7c4757db6320cab6697fe73e5e8adb2457",
+      "src": "https://www.github.com/neovim/nvim-lspconfig"
+    },
+    "vim-puppet": {
+      "rev": "21b2b9ecaf8ef18ea4755ed7f82937eb97989c82",
+      "src": "https://github.com/rodjek/vim-puppet.git"
+    }
+  }
+}
