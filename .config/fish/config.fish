@@ -17,7 +17,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     set fish_greeting
 
-    alias ls 'command ls -lh --color=auto'
+    function ls
+        command ls -lh --color=auto $argv
+    end
     alias dotfiles '/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 end
 
@@ -32,6 +34,11 @@ if type -q ruby
     if test -d "$ruby_gem_bin"
         fish_add_path --prepend "$ruby_gem_bin"
     end
+end
+
+set -l home_bin "$HOME/.local/bin"
+if test -d "$home_bin"
+    fish_add_path --prepend ~/.local/bin
 end
 
 set -l puppet_editor_services "$HOME/builds/puppet-editor-services"
