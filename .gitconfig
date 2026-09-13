@@ -2,6 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Albin Johansson
+	email = albin.johansson@liu.se
 [gpg]
 	format = ssh
 [commit]
