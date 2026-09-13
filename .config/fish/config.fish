@@ -16,7 +16,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     set fish_greeting
 
-    alias ls 'command ls -lh --color=auto'
+    function ls
+        command ls -lh --color=auto $argv
+    end
     alias dotfiles '/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 end
 
