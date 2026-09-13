@@ -35,6 +35,11 @@ if type -q ruby
     end
 end
 
+set -l home_bin "$HOME/.local/bin"
+if test -d "$home_bin"
+    fish_add_path --prepend ~/.local/bin
+end
+
 set -l puppet_editor_services "$HOME/builds/puppet-editor-services"
 if test -d "$puppet_editor_services"
     fish_add_path --prepend "$puppet_editor_services"
