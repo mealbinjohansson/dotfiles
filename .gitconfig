@@ -3,6 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Albin Johansson
 	email = albin.johansson@liu.se
+	signingkey = /home/albin/.ssh/yubikey.pub
 [gpg]
 	format = ssh
 [commit]
