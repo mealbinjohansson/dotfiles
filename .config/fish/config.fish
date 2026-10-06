@@ -20,6 +20,7 @@ if status is-interactive
     function ls
         command ls -lh --color=auto $argv
     end
+    alias eza 'command eza -l'
     alias dotfiles '/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 end
 
