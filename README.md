@@ -1,4 +1,4 @@
-# Albin's dotfiles
+# Introduction to Albin's dotfiles
 
 This is my personal dotfiles, tuned to my own liking and workflow. The project
 is a bare repository, tracking files outside of the git repository's directory.
@@ -7,7 +7,7 @@ The `main` branch has all my shared configuration. The `personal` branch
 contains the adjustment the specific configuration for my personal computing
 devices and the `work` for my work computing devices.
 
-## Set up repo on a new computer
+# Set up dotfiles
 
 Begin by cloning the bare repository using ssh with the following command:
 
@@ -39,6 +39,23 @@ command assuming the alias for dotfiles has been set.
 ```
 dotfiles config status.showUntrackedFiles false
 ```
+
+# Configure dotfiles
+
+## Dark mode
+
+To enable dark mode for GTK apps, run once per machine (persists across reboots):
+
+```sh
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+```
+
+# Contributing
+
+I don't really want you contributing, these are my dotfiles! However I'm
+providing contribution instructions for my future self and for you if you decide
+to fork my dotfiles!
 
 ## Contributing without changing branch
 
