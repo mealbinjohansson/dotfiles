@@ -53,7 +53,11 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 
 # Contributing
 
-# Contributing without changing branch
+I don't really want you contributing, these are my dotfiles! However I'm
+providing contribution instructions for my future self and for you if you decide
+to fork my dotfiles!
+
+## Contributing without changing branch
 
 Since this repo contains git configuration that is set on a per-branch basis you
 might want to commit shared changes to main without switching to the branch
