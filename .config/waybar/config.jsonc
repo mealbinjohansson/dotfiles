@@ -1,0 +1,35 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 34,
+  "spacing": 0,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-right": ["network", "battery", "pulseaudio", "clock"],
+
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "format": "{:%A Week %V %Y-%m-%d %H:%M:%S}",
+    "interval": 1
+  },
+
+  "network": {
+    "format-wifi": "Online │",
+    "format-ethernet": "Online │",
+    "format-disconnected": "Offline │"
+  },
+
+  "pulseaudio": {
+    "format": "Volume: {volume}% │",
+    "format-muted": "Muted │"
+  },
+
+  "battery": {
+    "format": "Battery: {capacity}% │",
+    "format-charging": "Charging: {capacity}% │"
+  }
+}
