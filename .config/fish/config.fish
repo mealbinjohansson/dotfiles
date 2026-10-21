@@ -23,7 +23,7 @@ if command -q ruby
 end
 
 # Missing directories are ignored; keep these paths local to each shell.
-fish_add_path --global "$HOME/builds/puppet-editor-services" "$HOME/.local/bin"
+fish_add_path --global "$HOME/.local/bin"
 
 if status is-interactive
     set -g fish_greeting
