@@ -8,8 +8,7 @@
   "modules-right": ["network", "battery", "pulseaudio", "clock"],
 
   "hyprland/workspaces": {
-    "format": "{id}",
-    "on-click": "activate"
+    "format": "{id}"
   },
 
   "clock": {
@@ -25,7 +24,11 @@
 
   "pulseaudio": {
     "format": "Volume: {volume}% │",
-    "format-muted": "Muted │"
+    "format-muted": "<span foreground='#888888'>Muted</span> │",
+    "scroll-step": 5,
+    "max-volume": 100,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "tooltip": false
   },
 
   "battery": {
